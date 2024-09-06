@@ -23,9 +23,8 @@ public class DiceRoll {
 	/**
 	 * Find the average number of times a pair of dice must be rolled to get a given
 	 * total. The experiment of rolling for the given total is repeated
-	 * NUMBER_OF_EXPERIMENTS times and the average number of rolls over all the
-	 * experiments is computed. Precondition: The given total must be between 2 and
-	 * 12, inclusive.
+	 * DiceRolls times and the average number of rolls over all the
+	 * experiments is computed. Precondition: The given total must be between 1 and 6.
 	 * 
 	 * @param roll the total that we want to get on the dice
 	 * @return the average number of rolls that it takes to get the specified total
@@ -45,13 +44,11 @@ public class DiceRoll {
 
 	/**
 	 * Simulates rolling a pair of dice until a given total comes up. Precondition:
-	 * The desired total is between 2 and 12, inclusive.
+	 * The desired total is between 1 and 6.
 	 * 
 	 * @param N the total that we want to get on the dice
 	 * @return the number of times the dice are rolled before the desired total
 	 *         occurs
-	 * @throws IllegalArgumentException if the parameter, N, is not a number that
-	 *                                  could possibly come up on a pair of dice
 	 */
 	public static int rollFor(int N) {
 
@@ -67,4 +64,4 @@ public class DiceRoll {
 		return rollCount;
 	}
 
-} // end DiceRollStats
+} // end DiceRoll
